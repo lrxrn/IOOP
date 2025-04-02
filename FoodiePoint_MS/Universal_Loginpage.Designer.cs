@@ -61,7 +61,7 @@
             // 
             // pbchef_loginpage_picture
             // 
-            this.pbchef_loginpage_picture.Image = global::chef_assignment.Properties.Resources.CORAL1;
+            this.pbchef_loginpage_picture.Image = global::chef_assignment.Properties.Resources.LOGO;
             this.pbchef_loginpage_picture.InitialImage = global::chef_assignment.Properties.Resources.CORAL1;
             this.pbchef_loginpage_picture.Location = new System.Drawing.Point(128, 22);
             this.pbchef_loginpage_picture.Name = "pbchef_loginpage_picture";
