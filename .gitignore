@@ -100,5 +100,5 @@ $RECYCLE.BIN/
 *.sln.iml
 
 # Database - Binary and cannot publish onto git
-FoodiePoint_MS/Database.mdf
-FoodiePoint_MS/database_log.ldf
+# FoodiePoint_MS/Database.mdf
+# FoodiePoint_MS/database_log.ldf
