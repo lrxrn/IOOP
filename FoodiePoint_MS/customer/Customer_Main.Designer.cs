@@ -99,7 +99,7 @@
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.SystemColors.ControlDark;
+            this.panel1.BackColor = System.Drawing.SystemColors.ControlLight;
             this.panel1.Controls.Add(this.lbl_role);
             this.panel1.Controls.Add(this.lbl_user);
             this.panel1.Location = new System.Drawing.Point(540, 12);
