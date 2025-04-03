@@ -30,13 +30,13 @@
         {
             this.pnlchef_loginpage_info = new System.Windows.Forms.Panel();
             this.pbchef_loginpage_picture = new System.Windows.Forms.PictureBox();
-            this.btnchef_loginpage_exit = new System.Windows.Forms.Button();
-            this.btnchef_loginpage_login = new System.Windows.Forms.Button();
+            this.loginpage_exit = new System.Windows.Forms.Button();
+            this.loginpage_login = new System.Windows.Forms.Button();
             this.lblchef_loginpage_password = new System.Windows.Forms.Label();
             this.lblchef_loginpage_userID = new System.Windows.Forms.Label();
             this.lblchef_loginpage_title = new System.Windows.Forms.Label();
-            this.ltxtbxchef_loginpage_password = new System.Windows.Forms.TextBox();
-            this.ltxtbxchef_loginpage_userID = new System.Windows.Forms.TextBox();
+            this.loginpage_password = new System.Windows.Forms.TextBox();
+            this.loginpage_userID = new System.Windows.Forms.TextBox();
             this.pbchef_loginpage_picture2 = new System.Windows.Forms.PictureBox();
             this.pnlchef_loginpage_info.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbchef_loginpage_picture)).BeginInit();
@@ -47,13 +47,13 @@
             // 
             this.pnlchef_loginpage_info.BackColor = System.Drawing.Color.Orange;
             this.pnlchef_loginpage_info.Controls.Add(this.pbchef_loginpage_picture);
-            this.pnlchef_loginpage_info.Controls.Add(this.btnchef_loginpage_exit);
-            this.pnlchef_loginpage_info.Controls.Add(this.btnchef_loginpage_login);
+            this.pnlchef_loginpage_info.Controls.Add(this.loginpage_exit);
+            this.pnlchef_loginpage_info.Controls.Add(this.loginpage_login);
             this.pnlchef_loginpage_info.Controls.Add(this.lblchef_loginpage_password);
             this.pnlchef_loginpage_info.Controls.Add(this.lblchef_loginpage_userID);
             this.pnlchef_loginpage_info.Controls.Add(this.lblchef_loginpage_title);
-            this.pnlchef_loginpage_info.Controls.Add(this.ltxtbxchef_loginpage_password);
-            this.pnlchef_loginpage_info.Controls.Add(this.ltxtbxchef_loginpage_userID);
+            this.pnlchef_loginpage_info.Controls.Add(this.loginpage_password);
+            this.pnlchef_loginpage_info.Controls.Add(this.loginpage_userID);
             this.pnlchef_loginpage_info.Location = new System.Drawing.Point(385, 0);
             this.pnlchef_loginpage_info.Name = "pnlchef_loginpage_info";
             this.pnlchef_loginpage_info.Size = new System.Drawing.Size(379, 455);
@@ -62,37 +62,37 @@
             // pbchef_loginpage_picture
             // 
             this.pbchef_loginpage_picture.Image = global::chef_assignment.Properties.Resources.LOGO;
-            this.pbchef_loginpage_picture.InitialImage = global::chef_assignment.Properties.Resources.CORAL1;
+            this.pbchef_loginpage_picture.InitialImage = global::chef_assignment.Properties.Resources.LOGO;
             this.pbchef_loginpage_picture.Location = new System.Drawing.Point(128, 22);
             this.pbchef_loginpage_picture.Name = "pbchef_loginpage_picture";
             this.pbchef_loginpage_picture.Size = new System.Drawing.Size(124, 109);
-            this.pbchef_loginpage_picture.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pbchef_loginpage_picture.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pbchef_loginpage_picture.TabIndex = 39;
             this.pbchef_loginpage_picture.TabStop = false;
             // 
-            // btnchef_loginpage_exit
+            // loginpage_exit
             // 
-            this.btnchef_loginpage_exit.BackColor = System.Drawing.Color.SandyBrown;
-            this.btnchef_loginpage_exit.Font = new System.Drawing.Font("Microsoft YaHei", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnchef_loginpage_exit.Location = new System.Drawing.Point(62, 364);
-            this.btnchef_loginpage_exit.Name = "btnchef_loginpage_exit";
-            this.btnchef_loginpage_exit.Size = new System.Drawing.Size(107, 30);
-            this.btnchef_loginpage_exit.TabIndex = 38;
-            this.btnchef_loginpage_exit.Text = "Exit";
-            this.btnchef_loginpage_exit.UseVisualStyleBackColor = false;
-            this.btnchef_loginpage_exit.Click += new System.EventHandler(this.btnchef_loginpage_exit_Click);
+            this.loginpage_exit.BackColor = System.Drawing.Color.SandyBrown;
+            this.loginpage_exit.Font = new System.Drawing.Font("Microsoft YaHei", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.loginpage_exit.Location = new System.Drawing.Point(62, 364);
+            this.loginpage_exit.Name = "loginpage_exit";
+            this.loginpage_exit.Size = new System.Drawing.Size(107, 30);
+            this.loginpage_exit.TabIndex = 38;
+            this.loginpage_exit.Text = "Exit";
+            this.loginpage_exit.UseVisualStyleBackColor = false;
+            this.loginpage_exit.Click += new System.EventHandler(this.btnchef_loginpage_exit_Click);
             // 
-            // btnchef_loginpage_login
+            // loginpage_login
             // 
-            this.btnchef_loginpage_login.BackColor = System.Drawing.Color.DarkOrange;
-            this.btnchef_loginpage_login.Font = new System.Drawing.Font("Microsoft YaHei", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnchef_loginpage_login.Location = new System.Drawing.Point(217, 364);
-            this.btnchef_loginpage_login.Name = "btnchef_loginpage_login";
-            this.btnchef_loginpage_login.Size = new System.Drawing.Size(107, 30);
-            this.btnchef_loginpage_login.TabIndex = 36;
-            this.btnchef_loginpage_login.Text = "Log In";
-            this.btnchef_loginpage_login.UseVisualStyleBackColor = false;
-            this.btnchef_loginpage_login.Click += new System.EventHandler(this.btnchef_loginpage_login_Click);
+            this.loginpage_login.BackColor = System.Drawing.Color.DarkOrange;
+            this.loginpage_login.Font = new System.Drawing.Font("Microsoft YaHei", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.loginpage_login.Location = new System.Drawing.Point(217, 364);
+            this.loginpage_login.Name = "loginpage_login";
+            this.loginpage_login.Size = new System.Drawing.Size(107, 30);
+            this.loginpage_login.TabIndex = 36;
+            this.loginpage_login.Text = "Log In";
+            this.loginpage_login.UseVisualStyleBackColor = false;
+            this.loginpage_login.Click += new System.EventHandler(this.btnchef_loginpage_login_Click);
             // 
             // lblchef_loginpage_password
             // 
@@ -118,25 +118,25 @@
             // 
             this.lblchef_loginpage_title.AutoSize = true;
             this.lblchef_loginpage_title.Font = new System.Drawing.Font("Tahoma", 26.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblchef_loginpage_title.Location = new System.Drawing.Point(134, 160);
+            this.lblchef_loginpage_title.Location = new System.Drawing.Point(132, 161);
             this.lblchef_loginpage_title.Name = "lblchef_loginpage_title";
             this.lblchef_loginpage_title.Size = new System.Drawing.Size(131, 42);
             this.lblchef_loginpage_title.TabIndex = 32;
             this.lblchef_loginpage_title.Text = "Log In";
             // 
-            // ltxtbxchef_loginpage_password
+            // loginpage_password
             // 
-            this.ltxtbxchef_loginpage_password.Location = new System.Drawing.Point(175, 279);
-            this.ltxtbxchef_loginpage_password.Name = "ltxtbxchef_loginpage_password";
-            this.ltxtbxchef_loginpage_password.Size = new System.Drawing.Size(191, 20);
-            this.ltxtbxchef_loginpage_password.TabIndex = 30;
+            this.loginpage_password.Location = new System.Drawing.Point(175, 279);
+            this.loginpage_password.Name = "loginpage_password";
+            this.loginpage_password.Size = new System.Drawing.Size(191, 20);
+            this.loginpage_password.TabIndex = 30;
             // 
-            // ltxtbxchef_loginpage_userID
+            // loginpage_userID
             // 
-            this.ltxtbxchef_loginpage_userID.Location = new System.Drawing.Point(175, 243);
-            this.ltxtbxchef_loginpage_userID.Name = "ltxtbxchef_loginpage_userID";
-            this.ltxtbxchef_loginpage_userID.Size = new System.Drawing.Size(191, 20);
-            this.ltxtbxchef_loginpage_userID.TabIndex = 29;
+            this.loginpage_userID.Location = new System.Drawing.Point(175, 243);
+            this.loginpage_userID.Name = "loginpage_userID";
+            this.loginpage_userID.Size = new System.Drawing.Size(191, 20);
+            this.loginpage_userID.TabIndex = 29;
             // 
             // pbchef_loginpage_picture2
             // 
@@ -161,7 +161,7 @@
             this.Controls.Add(this.pbchef_loginpage_picture2);
             this.Controls.Add(this.pnlchef_loginpage_info);
             this.Name = "Universal_Loginpage";
-            this.Text = "Universal_Loginpage";
+            this.Text = "Login - FoodiePoint";
             this.pnlchef_loginpage_info.ResumeLayout(false);
             this.pnlchef_loginpage_info.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbchef_loginpage_picture)).EndInit();
@@ -173,13 +173,13 @@
         #endregion
 
         private System.Windows.Forms.Panel pnlchef_loginpage_info;
-        private System.Windows.Forms.Button btnchef_loginpage_login;
+        private System.Windows.Forms.Button loginpage_login;
         private System.Windows.Forms.Label lblchef_loginpage_password;
         private System.Windows.Forms.Label lblchef_loginpage_userID;
         private System.Windows.Forms.Label lblchef_loginpage_title;
-        private System.Windows.Forms.TextBox ltxtbxchef_loginpage_password;
-        private System.Windows.Forms.TextBox ltxtbxchef_loginpage_userID;
-        private System.Windows.Forms.Button btnchef_loginpage_exit;
+        private System.Windows.Forms.TextBox loginpage_password;
+        private System.Windows.Forms.TextBox loginpage_userID;
+        private System.Windows.Forms.Button loginpage_exit;
         private System.Windows.Forms.PictureBox pbchef_loginpage_picture2;
         private System.Windows.Forms.PictureBox pbchef_loginpage_picture;
     }

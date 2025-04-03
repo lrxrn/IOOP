@@ -28,19 +28,12 @@ namespace chef_assignment
                 return;
             }
 
-            string userIDText = ltxtbxchef_loginpage_userID.Text.Trim();
-            string password = ltxtbxchef_loginpage_password.Text.Trim();
-            string role = ltxtbxchef_loginpage_role.Text.Trim();
+            string userID = loginpage_userID.Text.Trim();
+            string password = loginpage_password.Text.Trim();
 
-            if (string.IsNullOrEmpty(userIDText) || string.IsNullOrEmpty(password) || string.IsNullOrEmpty(role))
+            if (string.IsNullOrEmpty(userID) || string.IsNullOrEmpty(password))
             {
                 MessageBox.Show("Fill all fields please.");
-                return;
-            }
-
-            if (!int.TryParse(userIDText, out int userID))
-            {
-                MessageBox.Show("User ID must be a number.");
                 return;
             }
 
@@ -48,11 +41,10 @@ namespace chef_assignment
             {
                 using (SqlConnection conn = new chef_databasehelper().GetConnection())
                 {
-                    string query = "SELECT * FROM users WHERE userID = @userID AND password = @password AND role = @role";
+                    string query = "SELECT * FROM users WHERE (username = @userID OR email = @userID) AND password = @password";
                     SqlCommand cmd = new SqlCommand(query, conn);
                     cmd.Parameters.AddWithValue("@userID", userID);
                     cmd.Parameters.AddWithValue("@password", password);
-                    cmd.Parameters.AddWithValue("@role", role);
 
                     conn.Open();
                     SqlDataReader reader = cmd.ExecuteReader();
@@ -60,12 +52,14 @@ namespace chef_assignment
                     if (reader.Read())
                     {
                         string fullname = reader["fullname"].ToString();
+                        string role = reader["role"].ToString();
+                        int userIDNum = Convert.ToInt32(reader["userID"]);
 
                         loginAttempts = 0;
 
                         if (role.Equals("Chef", StringComparison.OrdinalIgnoreCase))
                         {
-                            var chefDashboard = new formchef_chefdashbaord_chd(userID, fullname, role);
+                            var chefDashboard = new formchef_chefdashbaord_chd(userIDNum, fullname, role);
                             chefDashboard.Show();
                             this.Hide();
                         }
