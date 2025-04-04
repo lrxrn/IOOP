@@ -34,9 +34,9 @@
             this.lbl_msg = new System.Windows.Forms.Label();
             this.Restaurant_name = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.lv_MenuItems = new System.Windows.Forms.ListView();
             this.btn_Search = new System.Windows.Forms.Button();
             this.txtBox_Search = new System.Windows.Forms.TextBox();
+            this.lv_MenuItems = new System.Windows.Forms.ListBox();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.SuspendLayout();
@@ -107,15 +107,6 @@
             this.panel2.Size = new System.Drawing.Size(738, 325);
             this.panel2.TabIndex = 10;
             // 
-            // lv_MenuItems
-            // 
-            this.lv_MenuItems.HideSelection = false;
-            this.lv_MenuItems.Location = new System.Drawing.Point(24, 38);
-            this.lv_MenuItems.Name = "lv_MenuItems";
-            this.lv_MenuItems.Size = new System.Drawing.Size(693, 246);
-            this.lv_MenuItems.TabIndex = 3;
-            this.lv_MenuItems.UseCompatibleStateImageBehavior = false;
-            // 
             // btn_Search
             // 
             this.btn_Search.Location = new System.Drawing.Point(617, 12);
@@ -131,7 +122,16 @@
             this.txtBox_Search.Name = "txtBox_Search";
             this.txtBox_Search.Size = new System.Drawing.Size(586, 20);
             this.txtBox_Search.TabIndex = 1;
-            this.txtBox_Search.Text = "Search a Food";
+            // 
+            // lv_MenuItems
+            // 
+            this.lv_MenuItems.Font = new System.Drawing.Font("Roboto", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lv_MenuItems.FormattingEnabled = true;
+            this.lv_MenuItems.ItemHeight = 23;
+            this.lv_MenuItems.Location = new System.Drawing.Point(24, 39);
+            this.lv_MenuItems.Name = "lv_MenuItems";
+            this.lv_MenuItems.Size = new System.Drawing.Size(693, 234);
+            this.lv_MenuItems.TabIndex = 3;
             // 
             // Order_Food
             // 
@@ -163,6 +163,6 @@
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Button btn_Search;
         private System.Windows.Forms.TextBox txtBox_Search;
-        private System.Windows.Forms.ListView lv_MenuItems;
+        private System.Windows.Forms.ListBox lv_MenuItems;
     }
 }

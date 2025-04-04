@@ -123,7 +123,7 @@
             // pbchef_inmg_picture
             // 
             this.pbchef_inmg_picture.ErrorImage = null;
-            this.pbchef_inmg_picture.Image = global::chef_assignment.Properties.Resources.CORAL1;
+            this.pbchef_inmg_picture.Image = global::FoodiePoint.Properties.Resources.CORAL1;
             this.pbchef_inmg_picture.ImageLocation = "";
             this.pbchef_inmg_picture.InitialImage = null;
             this.pbchef_inmg_picture.Location = new System.Drawing.Point(25, 16);

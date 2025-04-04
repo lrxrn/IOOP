@@ -42,6 +42,7 @@
             this.btn_status = new System.Windows.Forms.Button();
             this.btn_feedback = new System.Windows.Forms.Button();
             this.btn_updateProfile = new System.Windows.Forms.Button();
+            this.btn_logout = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -120,7 +121,7 @@
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Image = global::chef_assignment.Properties.Resources.LOGO;
+            this.pictureBox1.Image = global::FoodiePoint.Properties.Resources.LOGO;
             this.pictureBox1.Location = new System.Drawing.Point(418, 44);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(264, 240);
@@ -180,11 +181,23 @@
             this.btn_updateProfile.Text = "Update Profile";
             this.btn_updateProfile.UseVisualStyleBackColor = true;
             // 
+            // btn_logout
+            // 
+            this.btn_logout.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_logout.Location = new System.Drawing.Point(540, 80);
+            this.btn_logout.Name = "btn_logout";
+            this.btn_logout.Size = new System.Drawing.Size(219, 27);
+            this.btn_logout.TabIndex = 8;
+            this.btn_logout.Text = "Log Out";
+            this.btn_logout.UseVisualStyleBackColor = true;
+            this.btn_logout.Click += new System.EventHandler(this.btn_logout_Click);
+            // 
             // Customer_Main
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(783, 450);
+            this.Controls.Add(this.btn_logout);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.lbl_msg);
@@ -216,5 +229,6 @@
         private System.Windows.Forms.Button btn_feedback;
         private System.Windows.Forms.Button btn_updateProfile;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Button btn_logout;
     }
 }

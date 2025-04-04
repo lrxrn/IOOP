@@ -29,8 +29,14 @@
         private void InitializeComponent()
         {
             this.grpbxchef_chd_lowinventory = new System.Windows.Forms.GroupBox();
+            this.lblbxchef_chd_lowinventorycount = new System.Windows.Forms.Label();
+            this.lsbxchef_chd_lowinventory = new System.Windows.Forms.ListBox();
             this.grpbxchef_chd_completed = new System.Windows.Forms.GroupBox();
+            this.lblbxchef_chd_completedcount = new System.Windows.Forms.Label();
+            this.lsbxchef_chd_completed = new System.Windows.Forms.ListBox();
             this.grpbxchef_chd_inprogress = new System.Windows.Forms.GroupBox();
+            this.lblbxchef_chd_inprogresscount = new System.Windows.Forms.Label();
+            this.lsbxchef_chd_inprogress = new System.Windows.Forms.ListBox();
             this.pnlchef_chd_choices = new System.Windows.Forms.Panel();
             this.btnchef_chd_logout = new System.Windows.Forms.Button();
             this.btnchef_chd_manage_order = new System.Windows.Forms.Button();
@@ -41,12 +47,6 @@
             this.lblchef_chd_username = new System.Windows.Forms.Label();
             this.pbchef_chd_picture = new System.Windows.Forms.PictureBox();
             this.lblchef_chd_title = new System.Windows.Forms.Label();
-            this.lsbxchef_chd_lowinventory = new System.Windows.Forms.ListBox();
-            this.lsbxchef_chd_inprogress = new System.Windows.Forms.ListBox();
-            this.lsbxchef_chd_completed = new System.Windows.Forms.ListBox();
-            this.lblbxchef_chd_completedcount = new System.Windows.Forms.Label();
-            this.lblbxchef_chd_inprogresscount = new System.Windows.Forms.Label();
-            this.lblbxchef_chd_lowinventorycount = new System.Windows.Forms.Label();
             this.grpbxchef_chd_lowinventory.SuspendLayout();
             this.grpbxchef_chd_completed.SuspendLayout();
             this.grpbxchef_chd_inprogress.SuspendLayout();
@@ -67,6 +67,24 @@
             this.grpbxchef_chd_lowinventory.TabStop = false;
             this.grpbxchef_chd_lowinventory.Text = "Low inventory items";
             // 
+            // lblbxchef_chd_lowinventorycount
+            // 
+            this.lblbxchef_chd_lowinventorycount.AutoSize = true;
+            this.lblbxchef_chd_lowinventorycount.BackColor = System.Drawing.Color.MistyRose;
+            this.lblbxchef_chd_lowinventorycount.Location = new System.Drawing.Point(17, 22);
+            this.lblbxchef_chd_lowinventorycount.Name = "lblbxchef_chd_lowinventorycount";
+            this.lblbxchef_chd_lowinventorycount.Size = new System.Drawing.Size(118, 13);
+            this.lblbxchef_chd_lowinventorycount.TabIndex = 46;
+            this.lblbxchef_chd_lowinventorycount.Text = "                                     ";
+            // 
+            // lsbxchef_chd_lowinventory
+            // 
+            this.lsbxchef_chd_lowinventory.FormattingEnabled = true;
+            this.lsbxchef_chd_lowinventory.Location = new System.Drawing.Point(6, 45);
+            this.lsbxchef_chd_lowinventory.Name = "lsbxchef_chd_lowinventory";
+            this.lsbxchef_chd_lowinventory.Size = new System.Drawing.Size(211, 134);
+            this.lsbxchef_chd_lowinventory.TabIndex = 42;
+            // 
             // grpbxchef_chd_completed
             // 
             this.grpbxchef_chd_completed.BackColor = System.Drawing.Color.OrangeRed;
@@ -79,6 +97,24 @@
             this.grpbxchef_chd_completed.TabStop = false;
             this.grpbxchef_chd_completed.Text = "Completed orders";
             // 
+            // lblbxchef_chd_completedcount
+            // 
+            this.lblbxchef_chd_completedcount.AutoSize = true;
+            this.lblbxchef_chd_completedcount.BackColor = System.Drawing.Color.MistyRose;
+            this.lblbxchef_chd_completedcount.Location = new System.Drawing.Point(16, 22);
+            this.lblbxchef_chd_completedcount.Name = "lblbxchef_chd_completedcount";
+            this.lblbxchef_chd_completedcount.Size = new System.Drawing.Size(115, 13);
+            this.lblbxchef_chd_completedcount.TabIndex = 27;
+            this.lblbxchef_chd_completedcount.Text = "                                    ";
+            // 
+            // lsbxchef_chd_completed
+            // 
+            this.lsbxchef_chd_completed.FormattingEnabled = true;
+            this.lsbxchef_chd_completed.Location = new System.Drawing.Point(6, 45);
+            this.lsbxchef_chd_completed.Name = "lsbxchef_chd_completed";
+            this.lsbxchef_chd_completed.Size = new System.Drawing.Size(211, 134);
+            this.lsbxchef_chd_completed.TabIndex = 44;
+            // 
             // grpbxchef_chd_inprogress
             // 
             this.grpbxchef_chd_inprogress.BackColor = System.Drawing.Color.OrangeRed;
@@ -90,6 +126,24 @@
             this.grpbxchef_chd_inprogress.TabIndex = 36;
             this.grpbxchef_chd_inprogress.TabStop = false;
             this.grpbxchef_chd_inprogress.Text = "In progress orders";
+            // 
+            // lblbxchef_chd_inprogresscount
+            // 
+            this.lblbxchef_chd_inprogresscount.AutoSize = true;
+            this.lblbxchef_chd_inprogresscount.BackColor = System.Drawing.Color.MistyRose;
+            this.lblbxchef_chd_inprogresscount.Location = new System.Drawing.Point(15, 22);
+            this.lblbxchef_chd_inprogresscount.Name = "lblbxchef_chd_inprogresscount";
+            this.lblbxchef_chd_inprogresscount.Size = new System.Drawing.Size(115, 13);
+            this.lblbxchef_chd_inprogresscount.TabIndex = 45;
+            this.lblbxchef_chd_inprogresscount.Text = "                                    ";
+            // 
+            // lsbxchef_chd_inprogress
+            // 
+            this.lsbxchef_chd_inprogress.FormattingEnabled = true;
+            this.lsbxchef_chd_inprogress.Location = new System.Drawing.Point(6, 45);
+            this.lsbxchef_chd_inprogress.Name = "lsbxchef_chd_inprogress";
+            this.lsbxchef_chd_inprogress.Size = new System.Drawing.Size(211, 134);
+            this.lsbxchef_chd_inprogress.TabIndex = 43;
             // 
             // pnlchef_chd_choices
             // 
@@ -187,13 +241,13 @@
             // pbchef_chd_picture
             // 
             this.pbchef_chd_picture.ErrorImage = null;
-            this.pbchef_chd_picture.Image = global::chef_assignment.Properties.Resources.CORAL1;
+            this.pbchef_chd_picture.Image = global::FoodiePoint.Properties.Resources.LOGO;
             this.pbchef_chd_picture.ImageLocation = "";
             this.pbchef_chd_picture.InitialImage = null;
             this.pbchef_chd_picture.Location = new System.Drawing.Point(25, 16);
             this.pbchef_chd_picture.Name = "pbchef_chd_picture";
             this.pbchef_chd_picture.Size = new System.Drawing.Size(107, 92);
-            this.pbchef_chd_picture.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pbchef_chd_picture.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pbchef_chd_picture.TabIndex = 23;
             this.pbchef_chd_picture.TabStop = false;
             this.pbchef_chd_picture.WaitOnLoad = true;
@@ -207,60 +261,6 @@
             this.lblchef_chd_title.Size = new System.Drawing.Size(297, 42);
             this.lblchef_chd_title.TabIndex = 22;
             this.lblchef_chd_title.Text = "Chef Dashboard";
-            // 
-            // lsbxchef_chd_lowinventory
-            // 
-            this.lsbxchef_chd_lowinventory.FormattingEnabled = true;
-            this.lsbxchef_chd_lowinventory.Location = new System.Drawing.Point(6, 45);
-            this.lsbxchef_chd_lowinventory.Name = "lsbxchef_chd_lowinventory";
-            this.lsbxchef_chd_lowinventory.Size = new System.Drawing.Size(211, 134);
-            this.lsbxchef_chd_lowinventory.TabIndex = 42;
-            // 
-            // lsbxchef_chd_inprogress
-            // 
-            this.lsbxchef_chd_inprogress.FormattingEnabled = true;
-            this.lsbxchef_chd_inprogress.Location = new System.Drawing.Point(6, 45);
-            this.lsbxchef_chd_inprogress.Name = "lsbxchef_chd_inprogress";
-            this.lsbxchef_chd_inprogress.Size = new System.Drawing.Size(211, 134);
-            this.lsbxchef_chd_inprogress.TabIndex = 43;
-            // 
-            // lsbxchef_chd_completed
-            // 
-            this.lsbxchef_chd_completed.FormattingEnabled = true;
-            this.lsbxchef_chd_completed.Location = new System.Drawing.Point(6, 45);
-            this.lsbxchef_chd_completed.Name = "lsbxchef_chd_completed";
-            this.lsbxchef_chd_completed.Size = new System.Drawing.Size(211, 134);
-            this.lsbxchef_chd_completed.TabIndex = 44;
-            // 
-            // lblbxchef_chd_completedcount
-            // 
-            this.lblbxchef_chd_completedcount.AutoSize = true;
-            this.lblbxchef_chd_completedcount.BackColor = System.Drawing.Color.MistyRose;
-            this.lblbxchef_chd_completedcount.Location = new System.Drawing.Point(16, 22);
-            this.lblbxchef_chd_completedcount.Name = "lblbxchef_chd_completedcount";
-            this.lblbxchef_chd_completedcount.Size = new System.Drawing.Size(115, 13);
-            this.lblbxchef_chd_completedcount.TabIndex = 27;
-            this.lblbxchef_chd_completedcount.Text = "                                    ";
-            // 
-            // lblbxchef_chd_inprogresscount
-            // 
-            this.lblbxchef_chd_inprogresscount.AutoSize = true;
-            this.lblbxchef_chd_inprogresscount.BackColor = System.Drawing.Color.MistyRose;
-            this.lblbxchef_chd_inprogresscount.Location = new System.Drawing.Point(15, 22);
-            this.lblbxchef_chd_inprogresscount.Name = "lblbxchef_chd_inprogresscount";
-            this.lblbxchef_chd_inprogresscount.Size = new System.Drawing.Size(115, 13);
-            this.lblbxchef_chd_inprogresscount.TabIndex = 45;
-            this.lblbxchef_chd_inprogresscount.Text = "                                    ";
-            // 
-            // lblbxchef_chd_lowinventorycount
-            // 
-            this.lblbxchef_chd_lowinventorycount.AutoSize = true;
-            this.lblbxchef_chd_lowinventorycount.BackColor = System.Drawing.Color.MistyRose;
-            this.lblbxchef_chd_lowinventorycount.Location = new System.Drawing.Point(17, 22);
-            this.lblbxchef_chd_lowinventorycount.Name = "lblbxchef_chd_lowinventorycount";
-            this.lblbxchef_chd_lowinventorycount.Size = new System.Drawing.Size(118, 13);
-            this.lblbxchef_chd_lowinventorycount.TabIndex = 46;
-            this.lblbxchef_chd_lowinventorycount.Text = "                                     ";
             // 
             // formchef_chefdashbaord_chd
             // 

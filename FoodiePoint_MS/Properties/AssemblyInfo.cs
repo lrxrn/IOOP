@@ -5,12 +5,12 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("chef_assignment")]
-[assembly: AssemblyDescription("")]
+[assembly: AssemblyTitle("FoodiePoint")]
+[assembly: AssemblyDescription("FoodiePoint Restaurant Management System")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("chef_assignment")]
-[assembly: AssemblyCopyright("Copyright ©  2025")]
+[assembly: AssemblyProduct("FoodiePoint")]
+[assembly: AssemblyCopyright("Copyright © IOOP Group 2025")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 

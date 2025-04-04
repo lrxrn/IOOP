@@ -20,9 +20,10 @@ namespace FoodiePoint
         public Universal_Loginpage()
         {
             InitializeComponent();
+            this.AcceptButton = loginpage_login;
         }
 
-        private void btnchef_loginpage_login_Click(object sender, EventArgs e)
+        private void btn_loginpage_login_Click(object sender, EventArgs e)
         {
             if (DateTime.Now < lockoutTime)
             {
@@ -97,7 +98,7 @@ namespace FoodiePoint
             }
         }
 
-        private void btnchef_loginpage_exit_Click(object sender, EventArgs e)
+        private void btn_loginpage_exit_Click(object sender, EventArgs e)
         {
             Application.Exit();
         }

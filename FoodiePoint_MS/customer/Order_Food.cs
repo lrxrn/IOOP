@@ -54,7 +54,7 @@ namespace FoodiePoint.customer
                     Price = Convert.ToDecimal(row["price"]),
                     Category = row["category"].ToString(),
                     IsAvailable = Convert.ToBoolean(row["isAvailable"]),
-                    ImagePath = row["image"].ToString(),
+                    ImagePath = row["imagePath"].ToString(),
             };
 
                 items.Add(item);
@@ -73,7 +73,6 @@ namespace FoodiePoint.customer
                 {
                     SqlCommand cmd = new SqlCommand(query, conn);
 
-                    // Add parameters if provided
                     if (parameters != null)
                     {
                         foreach (var param in parameters)
@@ -84,7 +83,6 @@ namespace FoodiePoint.customer
 
                     conn.Open();
 
-                    // Use SqlDataAdapter to fill the DataTable
                     using (SqlDataAdapter adapter = new SqlDataAdapter(cmd))
                     {
                         adapter.Fill(dataTable);
@@ -93,7 +91,6 @@ namespace FoodiePoint.customer
             }
             catch (Exception ex)
             {
-                // Log the exception or handle it as needed
                 MessageBox.Show($"Database error: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
 

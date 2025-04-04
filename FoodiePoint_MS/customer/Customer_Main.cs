@@ -34,5 +34,12 @@ namespace FoodiePoint.customer
             Order_Food_Form.Show();
             this.Hide();
         }
+
+        private void btn_logout_Click(object sender, EventArgs e)
+        {
+            Universal_Loginpage loginForm = new Universal_Loginpage();
+            loginForm.Show();
+            this.Close();
+        }
     }
 }
