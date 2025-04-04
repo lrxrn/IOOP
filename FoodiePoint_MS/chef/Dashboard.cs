@@ -10,7 +10,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace chef_assignment
+namespace FoodiePoint.chef
 {
     public partial class formchef_chefdashbaord_chd : Form
     {

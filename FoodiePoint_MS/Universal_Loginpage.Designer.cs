@@ -1,4 +1,4 @@
-﻿namespace chef_assignment
+﻿namespace FoodiePoint
 {
     partial class Universal_Loginpage
     {

@@ -6,7 +6,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Configuration;
 
-namespace chef_assignment
+namespace FoodiePoint.chef
 {
     internal class restaurantdatabaseconnection_chef
     {

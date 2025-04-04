@@ -6,7 +6,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace chef_assignment
+namespace FoodiePoint.chef
 {
     internal class chef_ordermanager
     {

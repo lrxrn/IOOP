@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace chef_assignment
+namespace FoodiePoint.chef
 {
     public partial class chef_databasepart_tester : Form
     {

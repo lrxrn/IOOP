@@ -1,4 +1,4 @@
-﻿namespace chef_assignment
+﻿namespace FoodiePoint.chef
 {
     partial class formchef_ordermanagment_odmg
     {

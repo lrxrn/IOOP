@@ -1,4 +1,6 @@
-﻿using System;
+﻿using FoodiePoint.customer;
+using FoodiePoint.chef;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -9,7 +11,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace chef_assignment
+namespace FoodiePoint
 {
     public partial class Universal_Loginpage : Form
     {
@@ -63,9 +65,15 @@ namespace chef_assignment
                             chefDashboard.Show();
                             this.Hide();
                         }
+                        else if (role.Equals("Customer", StringComparison.OrdinalIgnoreCase))
+                        {
+                            var customerDashboard = new Customer_Main(userIDNum, fullname, role);
+                            customerDashboard.Show();
+                            this.Hide();
+                        }
                         else
                         {
-                            MessageBox.Show("Dashboard for this role is not implemented.");
+                            MessageBox.Show("Dashboard for this role is not yet implemented.");
                         }
                     }
                     else

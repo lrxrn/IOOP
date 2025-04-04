@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace chef_assignment
+namespace FoodiePoint.chef
 {
     internal class chef_order
     {

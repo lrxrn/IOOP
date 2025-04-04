@@ -8,13 +8,31 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace chef_assignment.customer
+namespace FoodiePoint.customer
 {
     public partial class Customer_Main : Form
     {
-        public Customer_Main()
+        private int currentUserID;
+        private string currentUserFullName;
+        private string currentUserRole;
+
+        public Customer_Main(int userID, string fullName, string role)
         {
             InitializeComponent();
+
+            currentUserID = userID;
+            currentUserFullName = fullName;
+            currentUserRole = role;
+
+            lbl_user.Text = fullName.ToString();
+            lbl_role.Text = role.ToString();
+        }
+
+        private void btn_order_Click(object sender, EventArgs e)
+        {
+            var Order_Food_Form = new Order_Food(currentUserID, currentUserFullName);
+            Order_Food_Form.Show();
+            this.Hide();
         }
     }
 }

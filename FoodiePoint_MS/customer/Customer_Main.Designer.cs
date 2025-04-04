@@ -1,4 +1,4 @@
-﻿namespace chef_assignment.customer
+﻿namespace FoodiePoint.customer
 {
     partial class Customer_Main
     {
@@ -36,16 +36,16 @@
             this.lbl_role = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
             this.btn_order = new System.Windows.Forms.Button();
             this.btn_status = new System.Windows.Forms.Button();
             this.btn_feedback = new System.Windows.Forms.Button();
             this.btn_updateProfile = new System.Windows.Forms.Button();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
-            this.flowLayoutPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.flowLayoutPanel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // contextMenuStrip1
@@ -118,6 +118,16 @@
             this.panel2.Size = new System.Drawing.Size(738, 325);
             this.panel2.TabIndex = 7;
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::chef_assignment.Properties.Resources.LOGO;
+            this.pictureBox1.Location = new System.Drawing.Point(418, 44);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(264, 240);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 1;
+            this.pictureBox1.TabStop = false;
+            // 
             // flowLayoutPanel1
             // 
             this.flowLayoutPanel1.Controls.Add(this.btn_order);
@@ -138,6 +148,7 @@
             this.btn_order.TabIndex = 0;
             this.btn_order.Text = "Order Food";
             this.btn_order.UseVisualStyleBackColor = true;
+            this.btn_order.Click += new System.EventHandler(this.btn_order_Click);
             // 
             // btn_status
             // 
@@ -169,16 +180,6 @@
             this.btn_updateProfile.Text = "Update Profile";
             this.btn_updateProfile.UseVisualStyleBackColor = true;
             // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::chef_assignment.Properties.Resources.LOGO;
-            this.pictureBox1.Location = new System.Drawing.Point(418, 44);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(264, 240);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 1;
-            this.pictureBox1.TabStop = false;
-            // 
             // Customer_Main
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -193,8 +194,8 @@
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.panel2.ResumeLayout(false);
-            this.flowLayoutPanel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.flowLayoutPanel1.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
