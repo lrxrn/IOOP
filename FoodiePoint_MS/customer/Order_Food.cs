@@ -18,6 +18,7 @@ namespace FoodiePoint.customer
         private const string Role = "Customer";
         private int currentUserID;
         private string currentUserFullName;
+        private List<ResMenuItem> resMenuItems;
         public Order_Food(int UserID, string FullName)
         {
             InitializeComponent();
@@ -33,8 +34,8 @@ namespace FoodiePoint.customer
         private void onLoad()
         {
             lv_MenuItems.Items.Clear();
-            List<ResMenuItem> RestaurantMenuItemList = getMenuItems();
-            foreach (ResMenuItem item in RestaurantMenuItemList)
+            resMenuItems = getMenuItems();
+            foreach (ResMenuItem item in resMenuItems)
             {
                 lv_MenuItems.Items.Add(item.ToString());
             }
@@ -95,6 +96,57 @@ namespace FoodiePoint.customer
             }
 
             return dataTable;
+        }
+
+        private void btn_CheckOut_Click(object sender, EventArgs e)
+        {
+            return;
+        }
+
+        private void btn_add_Click(object sender, EventArgs e)
+        {
+            if (lbl_SelectedItemIndex.Text == "-")
+            {
+                MessageBox.Show("Select an item to add to your order.");
+            } else
+            {
+                int SelectedItemIndexInt = StringToInt(lbl_SelectedItemIndex.Text);
+                ResMenuItem SelectedItem = resMenuItems[SelectedItemIndexInt];
+                MessageBox.Show($"Selected item: {SelectedItem.ToString()}");
+            }
+        }
+
+        public int StringToInt(string input)
+        {
+            int result;
+            if (int.TryParse(input, out result))
+            {
+                return result;
+            }
+            else
+            {
+                throw new ArgumentException("Input string is not a valid integer.");
+            }
+        }
+
+        private void btn_backToDash_Click(object sender, EventArgs e)
+        {
+            Customer_Main MainCustomerForm = new Customer_Main(currentUserID, currentUserFullName, Role);
+            MainCustomerForm.Show();
+            this.Close();
+        }
+
+        private void lv_MenuItems_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (lv_MenuItems.SelectedItems.Count > 0)
+            {
+                lbl_selectedItem.Text = lv_MenuItems.SelectedItem.ToString();
+                lbl_SelectedItemIndex.Text = lv_MenuItems.SelectedIndex.ToString();
+            } else
+            {
+                lbl_selectedItem.Text = "No Item Selected.";
+                lbl_SelectedItemIndex.Text = "-";
+            }
         }
     }
 }
