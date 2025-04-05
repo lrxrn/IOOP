@@ -3,7 +3,7 @@ using System.Windows.Forms;
 
 namespace FoodiePoint.reservation
 {
-    partial class Form1
+    partial class ReservationManager_Dashboard
     {
         /// <summary>
         ///  Required designer variable.
@@ -31,7 +31,7 @@ namespace FoodiePoint.reservation
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ReservationManager_Dashboard));
             lblTitle = new Label();
             cmbReservationStatus = new ComboBox();
             btnUpdate = new Button();

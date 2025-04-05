@@ -260,11 +260,11 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="chef\restaurantdatabaseconnection.cs" />
     <Compile Include="reservation\databaseconnection.cs" />
-    <Compile Include="reservation\Form1.cs">
+    <Compile Include="reservation\ReservationManager_Dashboard.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="reservation\Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="reservation\ReservationManager_Dashboard.Designer.cs">
+      <DependentUpon>ReservationManager_Dashboard.cs</DependentUpon>
     </Compile>
     <Compile Include="reservation\ManageReservationsForm.cs">
       <SubType>Form</SubType>
@@ -329,8 +329,8 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
-    <EmbeddedResource Include="reservation\Form1.resx">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <EmbeddedResource Include="reservation\ReservationManager_Dashboard.resx">
+      <DependentUpon>ReservationManager_Dashboard.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="reservation\ManageReservationsForm.resx">
       <DependentUpon>ManageReservationsForm.cs</DependentUpon>

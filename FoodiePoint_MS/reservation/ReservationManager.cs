@@ -5,13 +5,14 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using FoodiePoint.Helpers;
 
 namespace FoodiePoint.reservation
 {
     internal class ReservationManager
     {
         // Connection string 
-        private string connectionString = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\moham\source\repos\Reservation\Reservation\restaurant.mdf\Integrated Security=True;Connect Timeout=15;Encrypt=False;TrustServerCertificate=False";
+        private string connectionString = new DatabaseHelper().GetConnectionString();
 
         // Add Reservation Method
         public bool AddReservation(Reservation reservation)

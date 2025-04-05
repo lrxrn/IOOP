@@ -5,23 +5,33 @@ using System.Windows.Forms;
 using Microsoft.Data.SqlClient;
 //using static System.Runtime.InteropServices.JavaScript.JSType;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement;
+using FoodiePoint.Helpers;
 
 namespace FoodiePoint.reservation
 
 {
-    public partial class Form1 : Form
+    public partial class ReservationManager_Dashboard : Form
     {
         private ReservationManager reservationManager;
-        private string connectionString = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\moham\source\repos\Reservation\Reservation\restaurant.mdf;Integrated Security=True;Connect Timeout=15;Encrypt=False;TrustServerCertificate=False";
-        public Form1()
+        private string connectionString = new DatabaseHelper().GetConnectionString();
+
+        public int currentUserID;
+        public string currentUserFullName;
+        public string currentUserRole;
+        public ReservationManager_Dashboard(int userID, string userFullName, string userRole)
         {
             InitializeComponent();
+
+            currentUserID = userID;
+            currentUserFullName = userFullName;
+            currentUserRole = userRole;
+
             reservationManager = new ReservationManager();
         }
         // Function to load reservations 
         private void LoadReservations()
         {
-            string connectionString = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\moham\source\repos\Reservation\Reservation\restaurant.mdf;Integrated Security=True";
+            string connectionString = new DatabaseHelper().GetConnectionString();
 
             using (SqlConnection con = new SqlConnection(connectionString))
             {
