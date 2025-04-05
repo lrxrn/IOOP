@@ -17,6 +17,11 @@ namespace FoodiePoint.Helpers
             _connectionString = ConfigurationManager.ConnectionStrings["restaurant"].ConnectionString;
         }
 
+        public string GetConnectionString()
+        {
+            return _connectionString;
+        }
+
         public SqlConnection GetConnection()
         {
             return new SqlConnection(_connectionString);

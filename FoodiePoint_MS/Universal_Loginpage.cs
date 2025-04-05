@@ -1,5 +1,7 @@
 ﻿using FoodiePoint.customer;
 using FoodiePoint.chef;
+using FoodiePoint.admin;
+using FoodiePoint.Helpers;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -42,7 +44,7 @@ namespace FoodiePoint
 
             try
             {
-                using (SqlConnection conn = new chef_databasehelper().GetConnection())
+                using (SqlConnection conn = new DatabaseHelper().GetConnection())
                 {
                     string query = "SELECT * FROM users WHERE (username = @userID OR email = @userID) AND password = @password";
                     SqlCommand cmd = new SqlCommand(query, conn);
@@ -72,9 +74,32 @@ namespace FoodiePoint
                             customerDashboard.Show();
                             this.Hide();
                         }
+                        else if (role.Equals("Admin", StringComparison.OrdinalIgnoreCase))
+                        {
+                            var adminDashboard = new AdminHome(userIDNum, fullname, role);
+                            adminDashboard.Show();
+                            this.Hide();
+                        }
+                        //else if (role.Equals("Reservationcoordinator", StringComparison.OrdinalIgnoreCase))
+                        //{
+                        //    var reservationCoordinatorDashboard = new Reservaition(userIDNum);
+                        //    reservationCoordinatorDashboard.Show();
+                        //    this.Hide();
+                        //}
+                        //else if (role.Equals("Manager", StringComparison.OrdinalIgnoreCase))
+                        //{
+                        //    var managerDashboard = new Manager_Dashboard(userIDNum, fullname, role);
+                        //    managerDashboard.Show();
+                        //    this.Hide();
+                        //}
                         else
                         {
-                            MessageBox.Show("Dashboard for this role is not yet implemented.");
+                            MessageBox.Show(
+                                $"Your account has role '{role}' which is not currently supported in the system.\n\n" +
+                                "Please contact the system administrator for assistance.",
+                                "Access Restricted - Unsupported Role",
+                                MessageBoxButtons.OK,
+                                MessageBoxIcon.Warning);
                         }
                     }
                     else
