@@ -197,6 +197,40 @@
     <Compile Include="admin\Reservaition.Designer.cs">
       <DependentUpon>Reservaition.cs</DependentUpon>
     </Compile>
+    <Compile Include="manager\DatabaseDataSet.Designer.cs" />
+    <Compile Include="manager\DatabaseDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DatabaseDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="manager\generatereports.cs" />
+    <Compile Include="manager\HallReservationReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="manager\HallReservationReport.Designer.cs">
+      <DependentUpon>HallReservationReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="manager\ManageHallDetails.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="manager\ManageHallDetails.Designer.cs">
+      <DependentUpon>ManageHallDetails.cs</DependentUpon>
+    </Compile>
+    <Compile Include="manager\managehalls.cs" />
+    <Compile Include="manager\managemenu.cs" />
+    <Compile Include="manager\ManageMenuPricing.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="manager\ManageMenuPricing.Designer.cs">
+      <DependentUpon>ManageMenuPricing.cs</DependentUpon>
+    </Compile>
+    <Compile Include="manager\ManagerMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="manager\ManagerMain.Designer.cs">
+      <DependentUpon>ManagerMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="manager\manager_database_helper.cs" />
     <Compile Include="Models\Reservation.cs" />
     <Compile Include="Models\User.cs" />
     <Compile Include="admin\ViewReports.cs">
@@ -319,6 +353,18 @@
     <EmbeddedResource Include="customer\Order_Food.resx">
       <DependentUpon>Order_Food.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="manager\HallReservationReport.resx">
+      <DependentUpon>HallReservationReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="manager\ManageHallDetails.resx">
+      <DependentUpon>ManageHallDetails.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="manager\ManageMenuPricing.resx">
+      <DependentUpon>ManageMenuPricing.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="manager\ManagerMain.resx">
+      <DependentUpon>ManagerMain.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -338,6 +384,17 @@
     <EmbeddedResource Include="Universal_Loginpage.resx">
       <DependentUpon>Universal_Loginpage.cs</DependentUpon>
     </EmbeddedResource>
+    <None Include="manager\DatabaseDataSet.xsc">
+      <DependentUpon>DatabaseDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="manager\DatabaseDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DatabaseDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="manager\DatabaseDataSet.xss">
+      <DependentUpon>DatabaseDataSet.xsd</DependentUpon>
+    </None>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

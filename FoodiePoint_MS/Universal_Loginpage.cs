@@ -2,6 +2,7 @@
 using FoodiePoint.chef;
 using FoodiePoint.admin;
 using FoodiePoint.reservation;
+using FoodiePoint.manager;
 using FoodiePoint.Helpers;
 using System;
 using System.Collections.Generic;
@@ -87,12 +88,12 @@ namespace FoodiePoint
                             reservationCoordinatorDashboard.Show();
                             this.Hide();
                         }
-                        //else if (role.Equals("Manager", StringComparison.OrdinalIgnoreCase))
-                        //{
-                        //    var managerDashboard = new Manager_Dashboard(userIDNum, fullname, role);
-                        //    managerDashboard.Show();
-                        //    this.Hide();
-                        //}
+                        else if (role.Equals("Manager", StringComparison.OrdinalIgnoreCase))
+                        {
+                            var managerDashboard = new ManagerMain(userIDNum, fullname, role);
+                            managerDashboard.Show();
+                            this.Hide();
+                        }
                         else
                         {
                             MessageBox.Show(
