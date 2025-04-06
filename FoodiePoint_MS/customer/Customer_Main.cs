@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using FoodiePoint.Helpers;
 
 namespace FoodiePoint.customer
 {
@@ -40,6 +41,27 @@ namespace FoodiePoint.customer
             Universal_Loginpage loginForm = new Universal_Loginpage();
             loginForm.Show();
             this.Close();
+        }
+
+        private void btn_updateProfile_Click(object sender, EventArgs e)
+        {
+            ManageProfile_SH manageProfile_SH = new ManageProfile_SH(currentUserID, currentUserFullName, currentUserRole);
+            manageProfile_SH.Show();
+            this.Close();
+        }
+
+        private void btn_status_Click(object sender, EventArgs e)
+        {
+            View_Status view_Status = new View_Status(currentUserID, currentUserFullName);
+            view_Status.Show();
+            this.Hide();
+        }
+
+        private void btn_feedback_Click(object sender, EventArgs e)
+        {
+            Send_Feedback send_Feedback = new Send_Feedback(currentUserID, currentUserFullName);
+            send_Feedback.Show();
+            this.Hide();
         }
     }
 }

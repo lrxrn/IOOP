@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using FoodiePoint.Helpers;
 
 namespace FoodiePoint.manager
 {
@@ -44,7 +45,9 @@ namespace FoodiePoint.manager
 
         private void btnupdateprofile_Click(object sender, EventArgs e)
         {
-            
+            ManageProfile_SH manageProfile_SH = new ManageProfile_SH(currentUserID, currentUserFullName, currentUserRole);
+            manageProfile_SH.Show();
+            this.Hide();
         }
 
         private void btnlogout_Click(object sender, EventArgs e)

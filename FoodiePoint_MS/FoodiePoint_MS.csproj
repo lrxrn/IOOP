@@ -197,6 +197,30 @@
     <Compile Include="admin\Reservaition.Designer.cs">
       <DependentUpon>Reservaition.cs</DependentUpon>
     </Compile>
+    <Compile Include="customer\Send_Feedback.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="customer\Send_Feedback.Designer.cs">
+      <DependentUpon>Send_Feedback.cs</DependentUpon>
+    </Compile>
+    <Compile Include="customer\View_Status.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="customer\View_Status.Designer.cs">
+      <DependentUpon>View_Status.cs</DependentUpon>
+    </Compile>
+    <Compile Include="customer\Order_Food_Checkout.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="customer\Order_Food_Checkout.Designer.cs">
+      <DependentUpon>Order_Food_Checkout.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Helpers\ManageProfile_SH.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Helpers\ManageProfile_SH.Designer.cs">
+      <DependentUpon>ManageProfile_SH.cs</DependentUpon>
+    </Compile>
     <Compile Include="manager\DatabaseDataSet.Designer.cs" />
     <Compile Include="manager\DatabaseDataSet1.Designer.cs">
       <AutoGen>True</AutoGen>
@@ -350,8 +374,20 @@
     <EmbeddedResource Include="customer\Customer_Main.resx">
       <DependentUpon>Customer_Main.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="customer\Send_Feedback.resx">
+      <DependentUpon>Send_Feedback.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="customer\View_Status.resx">
+      <DependentUpon>View_Status.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="customer\Order_Food_Checkout.resx">
+      <DependentUpon>Order_Food_Checkout.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="customer\Order_Food.resx">
       <DependentUpon>Order_Food.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Helpers\ManageProfile_SH.resx">
+      <DependentUpon>ManageProfile_SH.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="manager\HallReservationReport.resx">
       <DependentUpon>HallReservationReport.cs</DependentUpon>

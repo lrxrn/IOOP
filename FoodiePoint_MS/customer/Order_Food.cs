@@ -19,6 +19,8 @@ namespace FoodiePoint.customer
         private int currentUserID;
         private string currentUserFullName;
         private List<ResMenuItem> resMenuItems;
+
+        public List<ResMenuItem> selectedOrderItems;
         public Order_Food(int UserID, string FullName)
         {
             InitializeComponent();
@@ -27,6 +29,8 @@ namespace FoodiePoint.customer
 
             lbl_user.Text = FullName.ToString();
             lbl_role.Text = Role;
+
+            selectedOrderItems = new List<ResMenuItem>();
 
             onLoad();
         }
@@ -100,7 +104,9 @@ namespace FoodiePoint.customer
 
         private void btn_CheckOut_Click(object sender, EventArgs e)
         {
-            return;
+            Order_Food_Checkout order_Food_Checkout = new Order_Food_Checkout(currentUserID, currentUserFullName, selectedOrderItems);
+            order_Food_Checkout.Show();
+            this.Close();
         }
 
         private void btn_add_Click(object sender, EventArgs e)
@@ -112,8 +118,15 @@ namespace FoodiePoint.customer
             {
                 int SelectedItemIndexInt = StringToInt(lbl_SelectedItemIndex.Text);
                 ResMenuItem SelectedItem = resMenuItems[SelectedItemIndexInt];
-                MessageBox.Show($"Selected item: {SelectedItem.ToString()}");
+                ItemSelected(SelectedItem);
             }
+        }
+
+        private void ItemSelected(ResMenuItem SelectedItem)
+        {
+            selectedOrderItems.Add(SelectedItem);
+            lbl_itemCntInCart.Text = selectedOrderItems.Count.ToString();
+            MessageBox.Show($"Item added to cart: {SelectedItem.ToString()}");
         }
 
         public int StringToInt(string input)
